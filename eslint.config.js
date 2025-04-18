@@ -6,9 +6,7 @@ export default [
   ...tseslint.configs.recommended,
   {
     files: ["**/*.ts", "**/*.tsx"],
-    rules: {
-      // You can customize rules here
-    },
+    rules: {},
   },
   {
     ignores: ["dist/**", "node_modules/**"],
