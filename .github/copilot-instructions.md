@@ -1,4 +1,13 @@
-# Effect-MCP Project Guidelines
+# @niklaserik/effect-mcp Project Guidelines
+
+## Project Purpose
+
+This project is an MCP (Model Context Protocol) server designed to fetch the most current documentation from the Effect ecosystem. Key objectives:
+
+- Provide real-time access to Effect documentation for AI assistants
+- Support both stable (`effect`) and unstable/experimental (`@effect/*`) packages
+- Detect Effect imports in user code to fetch relevant documentation
+- Integrate with VS Code and other MCP clients to answer documentation questions
 
 ## Package Management
 
