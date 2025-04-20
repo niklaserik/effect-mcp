@@ -21,7 +21,7 @@ server.tool(
     //   })
     // ),
     libraries: z
-      .array(z.literal("effect"))
+      .array(z.string())
       .describe(
         "List of effect libraries used in the code. E.g. effect, @effect/platform, @effect/platform-node"
       ),
@@ -37,3 +37,5 @@ server.tool(
 
 const transport = new StdioServerTransport();
 await server.connect(transport);
+
+console.log("Effect documentation server started");
