@@ -1,6 +1,6 @@
 {
   "name": "@niklaserik/effect-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Model Context Protocol (MCP) server dedicated to fetching the most current documentation from the Effect ecosystem.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,13 +10,16 @@
   },
   "private": false,
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && shx chmod +x dist/*.js",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Niklas Johansson | niklas@sluh.se | @niklaserik",
   "license": "MIT",
@@ -27,6 +30,7 @@
     "@eslint/js": "^9.23.0",
     "@types/node": "^22.14.1",
     "eslint-config-prettier": "^9.1.0",
+    "shx": "^0.4.0",
     "tsx": "^4.16.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.30.1"
