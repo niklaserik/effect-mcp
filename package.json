@@ -1,10 +1,11 @@
 {
   "name": "@niklaserik/effect-mcp",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Model Context Protocol (MCP) server dedicated to fetching the most current documentation from the Effect ecosystem.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "private": false,
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -40,5 +41,13 @@
       "esbuild",
       "msgpackr-extract"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niklaserik/effect-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niklaserik/effect-mcp/issues"
+  },
+  "homepage": "https://github.com/niklaserik/effect-mcp#readme"
 }
