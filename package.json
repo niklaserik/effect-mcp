@@ -1,13 +1,17 @@
 {
   "name": "@niklaserik/effect-mcp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Model Context Protocol (MCP) server dedicated to fetching the most current documentation from the Effect ecosystem.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "bin": {
+    "effect-mcp": "dist/index.js"
+  },
   "private": false,
   "scripts": {
     "build": "tsc",
+    "start": "node dist/index.js",
     "dev": "tsc --watch",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
