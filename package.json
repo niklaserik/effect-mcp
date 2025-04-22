@@ -1,6 +1,6 @@
 {
   "name": "@niklaserik/effect-mcp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Model Context Protocol (MCP) server dedicated to fetching the most current documentation from the Effect ecosystem.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
