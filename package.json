@@ -1,6 +1,6 @@
 {
   "name": "@niklaserik/effect-mcp",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Model Context Protocol (MCP) server dedicated to fetching the most current documentation from the Effect ecosystem.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin.js"
   ],
   "keywords": [],
   "author": "Niklas Johansson | niklas@sluh.se | @niklaserik",
@@ -40,7 +41,7 @@
     "@effect/platform": "^0.80.11",
     "@effect/platform-node": "^0.76.21",
     "@effect/typeclass": "^0.33.8",
-    "@modelcontextprotocol/sdk": "^1.10.1",
+    "@modelcontextprotocol/sdk": "^1.17.4",
     "effect": "^3.14.11",
     "zod": "^3.24.3"
   },
@@ -57,5 +58,8 @@
   "bugs": {
     "url": "https://github.com/niklaserik/effect-mcp/issues"
   },
-  "homepage": "https://github.com/niklaserik/effect-mcp#readme"
+  "homepage": "https://github.com/niklaserik/effect-mcp#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
